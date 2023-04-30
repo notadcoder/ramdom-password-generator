@@ -11,7 +11,7 @@ def generate_password(password_length):
 
     # Combine the character sets and randomly select characters to create the password
     all_chars = lower + upper + digits + special
-    password = ''.join(random.sample(all_chars, length))
+    password = ''.join(random.sample(all_chars, password_length))
 
     return password
 
